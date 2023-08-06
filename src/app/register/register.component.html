@@ -1,0 +1,62 @@
+<div class="register">
+    <section>
+        <h1>Register</h1>
+    <form (ngSubmit)="submit()" [formGroup]="form">
+        
+            <label for="name">Nom:</label>
+            <input type="text" name="name" formControlName="name" placeholder="Enter votre nom"  [ngClass]="{'is-invalid' : submitted && f.name.errors}">
+            <div *ngIf="submitted && f.name.errors" class="form-control">
+                <div *ngIf="f.name.errors.required">
+                    Name is required
+                </div>
+            </div>
+        
+        <label for="email">Email:</label>
+        <input type="text" name="email" formControlName="email" placeholder="Enter votre mail" [ngClass]="{'is-invalid' : submitted && f.email.errors}">
+            <div *ngIf="submitted && f.email.errors" class="form-control">
+                <div *ngIf="f.email.errors.required">
+                    Email is required
+                </div>
+    
+                <div *ngIf="f.email.errors.email">
+                    Email must be a valid email address
+                </div>
+            </div>
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" formControlName="password" placeholder=" enter password" [ngClass]="{'is-invalid' : submitted && f.password.errors}">
+        <div *ngIf="submitted && f.password.errors" class="form-control">
+            <div *ngIf="f.password.errors.required">
+                Password is required
+            </div>
+    
+            <div *ngIf="f.password.errors.minlength">
+                Password must be at least 8 characters
+            </div>
+        </div>
+        
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" name="confirmPassword" formControlName="confirmPassword" placeholder=" enter confirm password" [ngClass]="{'is-invalid' : submitted && f.confirmPassword.errors}">
+        <div *ngIf="submitted && f.password.errors" class="form-control">
+        <div *ngIf="f.confirmPassword.errors?.required">
+           Confirm Password is required
+        </div>
+    
+        <div *ngIf="f.confirmPassword.errors?.mustMatch">
+            Password must match
+        </div>
+        </div>
+         
+        
+        <button type="submit">Sign Up</button>
+        
+    </form>
+    <p>
+        Already registered?<br />
+        <span className="line">
+            <a href="/">Sign In</a>
+        </span>
+    </p>
+    </section>
+    </div>

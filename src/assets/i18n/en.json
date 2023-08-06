@@ -1,0 +1,41 @@
+{
+  "title": "Bahah Mbeirik",
+  "label": "Select another language!",
+  "projer": "the projects",
+  "home": "Home",
+  "contact":"contact us",
+  "dcn":"Logout",
+  
+  "sn":"Who are we",
+  "about":"About",
+  "s_about":"Have enough energy to make the world a better place before you die",
+  "dw":"Web developer",
+ 
+  "np":"End of studies project",
+  "dt_np":"This project carried out within",
+  "exp":"This is my university graduation project, with which I obtained a professional license certificate",
+  "np1":"End Of Semester Project",
+  "dt_np1":"A website for reporting lost items and finding",
+  "exp1":"I did this project in my second year of university, and passed the fourth semester with it",
+  "np2":"Car rental",
+  "dt_np2":"A website to manage car rental management",
+  "exp2":"This project is the first important project I did and it was the first project I presented",
+  "np3":"Personal Website",
+  "dt_np3":"A personal website created by the Frowmork React and in addition used for CSS style",
+  "vsc":"See Source Code",
+  
+  "nc":"contact us !!",
+  "ci":"Contact Information",
+  "s_ci":"fill up the form and then click send",
+  "loc":"Nouakchoutt-Mauritania",
+  "nom":"Your Name",
+  "mail":"Your Email",
+  "Objet":"Object",
+  "ms":"Your message",
+  "wn":" What type of website Do You Need?",
+  "pr":"Personal",
+  "ec":"E-commerce",
+  "lp":"Landing Page",
+  "em":"Send Message"
+}
+   

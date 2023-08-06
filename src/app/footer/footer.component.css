@@ -1,0 +1,214 @@
+.footer {
+    background-color:rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    
+  }
+.tcp{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+.s-m{
+    margin-top: 30px;
+    display: flex;
+    width: 20%;
+    justify-content:  center;
+    flex: 0 1 15%;
+    .i-c{
+        flex: 0 0 30px;
+        margin: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #fdffff;
+        transition: .3s all ease-in-out;
+        color: white;
+        &:hover{
+            color: #05f7ff;
+        }
+        .fa{
+            font-size: 20px;
+        }
+    }
+}
+.inpt{
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 1px;
+  font-size: 1.3rem;
+  /* font-weight: 300px; */
+  height: 40px;
+  color: rgb(7, 7, 7);
+  background: white;
+  border-bottom: 2px solid rgb(63, 28, 237);
+  transition: all .3s ease-in-out;
+  &:focus{
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #05f7ff;
+  }
+}
+.fot{
+  /* display: flex; */
+  width: 100%;
+  justify-content:  center;
+  /* flex: 0 1 5%; */
+}
+.pry{
+  width: 12%;
+  height: 40px;
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  color: rgb(12, 12, 12);
+}
+.pg{
+  width: 75%;
+}
+#lsk{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0rem;
+  .link{
+    margin-left: auto;
+  }
+  .link ul{
+    display: flex;
+    padding: 0;
+  }
+  .link li{
+    list-style-type: none;
+    margin: 0 8rem;
+  }
+  .link li a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: rgb(230, 226, 226);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color:rgb(56, 56, 56);
+    color: white;
+    text-align: center;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .tcp{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: 'rgba(0, 0, 0, 0.2)'
+  }
+  .s-m{
+    margin-top: 30px;
+    display: flex;
+    width: 20%;
+    justify-content:  center;
+    flex: 0 1 15%;
+    .i-c{
+        flex: 0 0 30px;
+        margin: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #fdffff;
+        transition: .3s all ease-in-out;
+        color: white;
+        &:hover{
+            color: #05f7ff;
+        }
+        .fa{
+            font-size: 20px;
+        }
+    }
+  }
+  .sm{
+    font-size: 12px;
+  }
+  .inpt{
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 1px;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: rgb(7, 7, 7);
+    background: white;
+    border-bottom: 2px solid rgb(63, 28, 237);
+    transition: all .3s ease-in-out;
+    &:focus{
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #05f7ff;
+    }
+  }
+  .fot{
+    display: flex;
+    width: 90%;
+    justify-content:  center;
+    flex: 0 1 5%;
+  }
+  .pry{
+    width: 28%;
+    height: 38px;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    color: rgb(12, 12, 12);
+    text-align: center;
+    font-size: 12px;
+  }
+  .pg{
+    width: 75%;
+  }
+  #lsk{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0rem;
+    .link{
+      margin-left: auto;
+    }
+    .link ul{
+      display: flex;
+      padding: 0;
+    }
+    .link li{
+      list-style-type: none;
+      margin: 0 2rem;
+    }
+    .link li a{
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      color: rgb(230, 226, 226);
+    }
+  }
+}

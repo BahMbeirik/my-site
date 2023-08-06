@@ -1,0 +1,41 @@
+<header class="hdr">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+        <div class="brand-name">
+          {{email}}
+        </div>
+        <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+          <div class="menu" [class.menuClass]="menuVariable">
+              <ul>
+                <li ><a href="/">{{'home' |translate}}</a></li>
+                <li><a href="/projer">{{'projer' |translate}}</a></li>
+                <li><a href="/contact">{{'contact' |translate}}</a></li>
+                <li>
+                  <a>
+                  <select class="form-control" #selectedLang (change)="switchLang(selectedLang.value)">
+                    <option *ngFor="let language of translate.getLangs()" [value]="language"
+                      [selected]="language === translate.currentLang">
+                      {{ language }}
+                    </option>
+                  </select>
+                </a>
+                </li>
+                <li><a>
+                  <label class="switch">
+                    <input type="checkbox" (change)="checkCheckBoxvalue($event)">
+                    <span class="slider round"></span>
+                  </label>
+                </a></li>
+                <li> <a></a></li>
+                <li><a></a></li>
+                <li> <a></a></li>
+                <li><a (click)="logout()"><button class="logout">{{'dcn' |translate}}</button></a></li>
+              </ul>
+          </div>
+</header>
+

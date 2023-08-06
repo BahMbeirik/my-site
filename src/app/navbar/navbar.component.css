@@ -1,0 +1,128 @@
+header{
+ height: 38px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ padding: 0.5rem 0rem;
+ background-color: rgba(0, 0, 0, 0.1);
+ 
+  /* backdrop-filter: blur(5px);
+  border: 1px solid rgb(98, 97, 97); */
+ position: fixed;
+ top: 7px; 
+  left: 0; 
+  z-index: 9999;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.menu{
+ /* margin-top: 8px; */
+ margin-left: auto;
+}
+.menu ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menu ul li a{
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 60px;
+  text-decoration: none;
+}
+
+
+.brand-name {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+img {
+  margin-top: 2px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.slider{
+  background-color: rgb(193, 248, 248);
+}
+.form-control{
+  width: 40px;
+}
+
+
+.logout{
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  height: 30px;
+  border: none;
+  margin-top: 4px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .menu{
+    position: fixed;
+    right: -280px;
+    top: 45px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 400px;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+  }
+  .menu ul{
+    display: block;
+    text-align: center;
+  }
+  .menu ul li a{
+    display: block;
+    text-align: left;
+    padding: 10px 0 10px 26px;
+    border-bottom: 0.1px solid #f9f5f5;
+    margin-left: auto;
+
+  }
+  .menu_icon{
+    display: inline-block;
+    position: relative;
+    right: 0;
+    /* top: 9px; */
+    margin-left: 58%;
+  }
+  .menu_icon span{
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    display: block;
+    transition: 0.2s ease-in-out;
+  }
+  .menu_icon span:nth-child(2){
+    margin: 4px 0;
+  }
+  .menu_icon_Class span:nth-child(2){
+    display: none;
+  }
+  .menu_icon_Class span:nth-child(1){
+    transform: rotate(50deg);
+    height: 2px;
+    
+  }
+  .menu_icon_Class span:nth-child(3){
+    transform: rotate(-50deg);
+    margin-top: -2px;
+    height: 2px;
+  }
+  .menuClass{
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+}

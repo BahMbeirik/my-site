@@ -1,0 +1,94 @@
+<app-navbar></app-navbar>
+<div class="darck">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="assets/vidio.mp4" type="video/mp4">
+    </video>
+    <div class='bd'>
+        <h1>{{'nc' |translate}}</h1>
+        <div id="contact-container">
+            <div class='contact-info'>
+                <h4>{{'ci' |translate}}</h4>
+                <p>{{'s_ci' |translate}}</p>
+                <br>
+                <br>
+                <div class='icon-text'>
+                    <i class='fa'><fa-icon [icon]="faPhone"></fa-icon> </i>
+                    <span>+222 41168885</span>
+                </div>
+                <div class='icon-text'>
+                    <i class='fa'><fa-icon [icon]="faMail"></fa-icon></i>
+                    <span>bahahembeirik@gmail.com</span>
+                </div>
+                <div class='icon-text'>
+                    <i class='fa'><fa-icon [icon]="faMap"></fa-icon> </i>
+                    <span>{{'loc' |translate}}</span>
+                </div>
+                <div class='social-media'>
+                    <a href="https://web.facebook.com/people/%D8%A7%EF%BA%91%EF%BB%AC%EF%BA%8E%EF%BB%A9-%EF%BA%83%EF%BB%A3%EF%BA%92%EF%BB%B4%EF%BA%AE%EF%BB%B3%EF%BB%9A/100011381646756/" class='icon-circle'>
+                    <i class='fa'><fa-icon [icon]="faFacebook"></fa-icon></i>
+                    </a>
+                    <a href="https://twitter.com/bahahembeirik" class='icon-circle'>
+                    <i class='fa'><fa-icon [icon]="faTwitter"></fa-icon></i>
+                    </a>
+                    <a href="https://www.instagram.com/bah_8_/" class='icon-circle'>
+                    <i class='fa'><fa-icon [icon]="faInstagram"></fa-icon> </i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCEVTUsP8EKh5Lh4FDpo-fpA" class='icon-circle'>
+                    <i class='fa'><fa-icon [icon]="faYoutube"></fa-icon></i>
+                    </a>
+                </div>
+            </div>
+            <form class='fr' (ngSubmit)="submit()" [formGroup]="form">
+                <div class='col'>
+                    <div class="form-group">
+                        <label class='lb'> {{'nom' |translate}}</label>
+                        <input class='inp' type="text" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label class='lb'> {{'mail' |translate}}</label>
+                        <input class='inp' type="email" name="email" required/>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class='col'>
+                    <div class="form-group">
+                        <label class='lb'> {{'Objet' |translate}} </label>
+                        <textarea class='inp' type="text" name="objet" ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class='lb'> {{'ms' |translate}} </label>
+                        <textarea class='inp' type="text" name="message" ></textarea>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class='col'>
+                    <div class="form-group">
+                        <label class='lb'>{{'wn' |translate}}</label>
+                        <br>
+                        <div id='radio-buttons'>
+                            <div class='radio-button'>
+                                <input type="radio" id='radiopersonal' name='terms[]' value='personal'/><label class='lb' for='radiopersonal'>{{'pr' |translate}}</label>
+                            </div>
+                            <div class='radio-button'>
+                                <input type="radio" id='radioecommerce' name='terms[]' value='ecommerce'/><label class='lb' for='radioecommerce'>{{'ec' |translate}}</label>
+                            </div>
+                            <div class='radio-button'>
+                                <input type="radio" id='radiolandingpage' name='terms[]' value='landingpage'/><label class='lb' for='radiolandingpage'>{{'lp' |translate}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col'>
+                    <div class="form-group">
+                        <div class='btt'>
+                            <button type="submit" class='primary'>{{'em' |translate}}</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+</div>
+<app-footer></app-footer>
